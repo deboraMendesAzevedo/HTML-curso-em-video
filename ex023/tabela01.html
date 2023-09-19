@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <STyle>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      
+        table{
+            width:400px;
+            height: 400px;
+            text-align: center;/* alinhamento horizontal */
+            vertical-align: middle;/* Alinhamento vertical */
+              /* boder collapse faz com que fique tudo junto as bordas da tabela
+            boder=collapse por  padrão é separete
+             */
+            border-collapse: collapse;
+                      
+        }
+        tr.linha{
+            background-color: lightslategray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+        td.dado{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Hierarquia da tabela
+    
+        tr é a linha da tabela
+        td é a coluna da tabela
+    
+    -->
+    <h1>Minha primeira tabela</h1>
+    <table>
+        
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

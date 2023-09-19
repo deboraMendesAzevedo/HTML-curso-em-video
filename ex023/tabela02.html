@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <STyle>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      
+        table{
+            width:350px;     
+            border-collapse: collapse;    
+            position: relative; 
+            
+        }
+        thead > tr > th{
+            /*Para fixar os cabeçalho na tabela */
+            position: sticky;
+            top: -1px;
+            background-color:lightslategray ;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 1px;
+            
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: azure;
+
+        }
+        thead, tfoot{
+            background-color: lightslategray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+        /*Essa função faz com que a tabela fique zebrada
+        3n de 3 em 3
+        4n de 4 em 4
+        e assim ...
+        odd é ímpar pode colocar assim também 
+        ou even que são as linha pares 
+        pode também 2n-1 ou apenas 2n
+        */
+        tbody > tr:nth-child(2n){
+            background-color: darkgray;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--
+        Anatomia para tabelas grandes
+        table
+            caption é a legenda
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    
+    -->
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <caption>População dos Estados</caption>        
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo </td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores assumenda saepe laborum cumque dolores sequi, consequatur cum accusamus ipsam, excepturi molestias voluptate dolorem dolor non optio necessitatibus, voluptates et atque?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repellat commodi soluta, voluptas sunt labore impedit minima recusandae veritatis magnam fugiat consectetur eius alias in esse ipsam, molestiae atque laudantium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sequi nostrum laborum sunt, ullam enim nobis illo debitis odio praesentium unde fuga, consequuntur quae eaque dolor perspiciatis quod maiores. Molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi reprehenderit sequi iure, ex ipsum, alias eaque at vitae quibusdam libero! Sequi autem dicta, ut expedita beatae eaque et saepe!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi totam blanditiis sapiente qui fuga minima ipsam quam quaerat, sunt libero harum vitae voluptate vero deleniti. Consectetur veniam facere eius? Tenetur?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores assumenda saepe laborum cumque dolores sequi, consequatur cum accusamus ipsam, excepturi molestias voluptate dolorem dolor non optio necessitatibus, voluptates et atque?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repellat commodi soluta, voluptas sunt labore impedit minima recusandae veritatis magnam fugiat consectetur eius alias in esse ipsam, molestiae atque laudantium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sequi nostrum laborum sunt, ullam enim nobis illo debitis odio praesentium unde fuga, consequuntur quae eaque dolor perspiciatis quod maiores. Molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi reprehenderit sequi iure, ex ipsum, alias eaque at vitae quibusdam libero! Sequi autem dicta, ut expedita beatae eaque et saepe!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi totam blanditiis sapiente qui fuga minima ipsam quam quaerat, sunt libero harum vitae voluptate vero deleniti. Consectetur veniam facere eius? Tenetur?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores assumenda saepe laborum cumque dolores sequi, consequatur cum accusamus ipsam, excepturi molestias voluptate dolorem dolor non optio necessitatibus, voluptates et atque?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repellat commodi soluta, voluptas sunt labore impedit minima recusandae veritatis magnam fugiat consectetur eius alias in esse ipsam, molestiae atque laudantium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sequi nostrum laborum sunt, ullam enim nobis illo debitis odio praesentium unde fuga, consequuntur quae eaque dolor perspiciatis quod maiores. Molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi reprehenderit sequi iure, ex ipsum, alias eaque at vitae quibusdam libero! Sequi autem dicta, ut expedita beatae eaque et saepe!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi totam blanditiis sapiente qui fuga minima ipsam quam quaerat, sunt libero harum vitae voluptate vero deleniti. Consectetur veniam facere eius? Tenetur?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores assumenda saepe laborum cumque dolores sequi, consequatur cum accusamus ipsam, excepturi molestias voluptate dolorem dolor non optio necessitatibus, voluptates et atque?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repellat commodi soluta, voluptas sunt labore impedit minima recusandae veritatis magnam fugiat consectetur eius alias in esse ipsam, molestiae atque laudantium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sequi nostrum laborum sunt, ullam enim nobis illo debitis odio praesentium unde fuga, consequuntur quae eaque dolor perspiciatis quod maiores. Molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi reprehenderit sequi iure, ex ipsum, alias eaque at vitae quibusdam libero! Sequi autem dicta, ut expedita beatae eaque et saepe!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi totam blanditiis sapiente qui fuga minima ipsam quam quaerat, sunt libero harum vitae voluptate vero deleniti. Consectetur veniam facere eius? Tenetur?
+            
+        </p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            /*negrito*/
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de tabela</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <!--scope col quando a informação está abaixo
+                scope colgroup quando a informação está abaixo em forma de grupo
+                -->
+
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <!-- scope rowgroup quando a informação está na frente -->
+
+                <th scope="rowgroup" rowspan="3"> Mulheres</th>
+                <td>Ana</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <td>Claudia</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <!-- row quando está espandindo na coluna-->
+                <th scope="rowgroup" rowspan="3">Homem</th>
+                <td>Bruno</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <td>Daniel</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <td>Fabiano</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+    
+</body>
+</html>
