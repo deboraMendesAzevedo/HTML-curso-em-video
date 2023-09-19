@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo formulário</h1>
+    <form action="cadastro.php">
+
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="" selected>-----Escolha-----</option>
+                <!--O label dentro do optiongroup não aparece com a opção de escolha -->
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <!--A lista não precisa passar um valor é opcional ela salva a opção de você digitou 
+                    para o proxímo caso não tenha na sua lista  -->
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvoldor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+
+            <label for="imensagem">Mensagem</label>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="10">O que escrever aqui vai aparecer na caixa </textarea>
+
+        </p>
+
+        <p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+    </form>
+    
+</body>
+</html>

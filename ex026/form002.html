@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+
+        <p>
+            <label for="iusu">Usuário </label>
+            <input type="text" name="usu" id="iusu" required minlength="3" maxlength="15" size="10" placeholder="nome do usuário"
+            autocomplete="username">
+            <!--Para obrigar a pessoa colocar os dados
+            minimo de letra digitada required minlength="3" 
+            maximo de letra digitada maxlength="15"
+            tamanho da caixa de texto size
+            dica para o usuário ver o que escrever dentro placeholder="nome do usuário"
+            para facilitar para o usuário na digitação autocomplete="username
+            -->
+        </p>
+        <P>
+            <label for="isen">Senha </label>
+            <input type="password" name="sen" id="isen" required autocomplete="current-password">
+            <!--
+                para uma nova senha ou para redefinir a senha autocomplete="new-password
+                para completar uma senha existente autocomplete="current-password
+            -->
+
+        </P>
+        <p>
+            <input type="submit" value="Enviar"><!--Para enviar os dados usa submit--->
+            <input type="reset" value="Limpar"><!--Para limpar os dados dentro da tela usa reset-->
+        </p>
+
+
+    </form>
+    
+
+
+
+</body>
+</html>

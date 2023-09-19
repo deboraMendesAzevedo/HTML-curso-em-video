@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <fieldset><!-- Para fazer uma caixa com borda nos dados -->
+            <legend>Dados Pessoais</legend> <!--Para fazer  um texto na caixa com borda -->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="30"
+                required >
+            </p>
+            <p>
+                <label for="imael">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel" >
+                <!-- estava com problema no envio dos dados verificar código
+                    pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"-->
+            </p>
+            <!--Estudar sobre REgEx-->
+        
+        </fieldset>
+        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        
+
+
+
+    </form>
+    
+</body>
+</html>
